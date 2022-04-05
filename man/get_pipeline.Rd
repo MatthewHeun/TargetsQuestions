@@ -2,7 +2,7 @@
 % Please edit documentation in R/piplines.R
 \name{get_pipeline}
 \alias{get_pipeline}
-\title{Creates a pipeline programmatically}
+\title{Create a pipeline programmatically}
 \usage{
 get_pipeline(which_countries)
 }
@@ -13,5 +13,5 @@ get_pipeline(which_countries)
 A \code{targets} pipeline.
 }
 \description{
-Creates a pipeline programmatically
+Create a pipeline programmatically
 }
