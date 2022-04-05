@@ -1,4 +1,4 @@
-#' Creates a pipeline programmatically
+#' Create a pipeline programmatically
 #'
 #' @param which_countries The countries of interest for this pipeline
 #'
