@@ -1,0 +1,12 @@
+Package: TargetsQuestions
+Title: Questions About Targets
+Version: 0.0.0.9000
+Authors@R: 
+    person("Matthew", "Heun", , "matthew.heun@me.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7438-214X"))
+Description: Questions persist about the `targets` package. 
+             Here is where I ask them.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2

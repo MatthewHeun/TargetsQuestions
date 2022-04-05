@@ -1,0 +1,4 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|2a0a014db11bef7b||||||||||||||
+couns|object|71a98212cb03af3a||||||||||||||
+countries|stem||5ea2f847f0f45326|6c7515059db4e6cd|-1719789746||t19087.8028180168s||0|rds|vector|||0.003||object which_countries not found
