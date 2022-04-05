@@ -10,7 +10,7 @@ get_pipeline(which_countries)
 \item{which_countries}{The countries of interest for this pipeline}
 }
 \value{
-A \code{targets} pipeline
+A \code{targets} pipeline.
 }
 \description{
 Creates a pipeline programmatically
