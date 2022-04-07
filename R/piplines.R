@@ -11,7 +11,8 @@ get_pipeline <- function(which_countries) {
   list(
     targets::tar_target(
       name = countries,
-      command = which_countries # But here, which_countries is not found
+      # command = which_countries # But here, which_countries is not found
+      command = !!which_countries # But here, which_countries is not found
     )
   )
 }
