@@ -6,13 +6,17 @@
 #'
 #' @export
 get_pipeline <- function(which_countries) {
-  countries <- NULL # avoid R CMD CHECK warning
-  print(which_countries) # Shows that which_countries is available
   list(
-    targets::tar_target(
-      name = countries,
-      # command = which_countries # But here, which_countries is not found
-      command = !!which_countries # But here, which_countries is not found
+    targets::tar_target_raw(
+      name = "Countries",
+      # command = which_countries # which_countries must have length 1
+      # command = !!which_countries # invalid argument type
+      command = rlang::enexpr(which_countries) # Works
+    ),
+
+    targets::tar_target_raw(
+      name = "DoubleCountries",
+      command = c(Countries, Countries)
     )
   )
 }
