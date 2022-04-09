@@ -16,7 +16,23 @@ get_pipeline <- function(which_countries) {
 
     targets::tar_target_raw(
       name = "DoubleCountries",
-      command = c(Countries, Countries)
+      # command = Countries                              # Object Countries not found
+      # command = c(Countries, Countries)                # Object Countries not found
+      # command = c(quote(Countries), quote(Countries))  # Not length 1.
+      # command = rlang::enexpr(c(Countries, Countries)) # `arg` must be a symbol
+      command = quote(combine_countries(Countries))
     )
   )
+}
+
+
+#' Combines 2 couns in a vector
+#'
+#' @param couns The incoming country list
+#'
+#' @return `c(couns, couns)`
+#'
+#' @export
+combine_countries <- function(couns) {
+  c(couns, couns)
 }
