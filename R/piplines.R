@@ -26,7 +26,7 @@ get_pipeline <- function(which_countries) {
 }
 
 
-#' Combines 2 couns in a vector
+#' Make a copy of couns
 #'
 #' @param couns The incoming country list
 #'
